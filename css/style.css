@@ -1,0 +1,346 @@
+*{
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('../fonts/Gilroylight.woff2') format('woff2'), url('../fonts/Gilroylight.woff') format('woff'), url('../fonts/Gilroylight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'), url('../fonts/Gilroyextrabold.woff2') format('woff2'), url('../fonts/Gilroyextrabold.woff') format('woff'), url('../fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+.authors_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 650px;
+    background: url(../images/8.png) 9% center no-repeat,
+ url(../images/4.png) left center no-repeat,
+  url(../images/volnuha.png) right 40% no-repeat,
+ url(../images/bublic.png) right 0 no-repeat;
+    background-size: auto, 70%, auto, 25%;
+}
+
+.authors_container > h1{
+	width: 920px;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 1.8em;
+    font-weight: 800;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #000000;
+    margin-top: 13px;
+    text-transform: uppercase;
+}
+
+.authors_wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 506px;
+    max-width: 1400px;
+    align-items: flex-start;
+}
+
+.authors_card{
+    display: flex;
+    flex-direction: column;
+    min-height: 450px;
+    width: 287px;
+    margin-right: 20px;
+}
+
+.authors_card > h1{
+    margin-left: 0px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.56;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #141414;
+}
+
+.authors_card > p{
+	font-family: 'Gilroy';
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.81;
+    letter-spacing: 0.7px;
+    text-align: left;
+    font-size: 11px;
+    color: #141414;
+}
+
+.authors_card > img{
+	width: 286px;
+}
+
+
+.about_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 786px;
+    background: url(../images/volna.png) 30% 70% no-repeat,
+	url(../images/bigben.png) left 100% no-repeat,
+	url(../images/2.png) 4% 28% no-repeat,
+	url(../images/bublic_big.png) 4% 74% no-repeat;
+    background-size: 8%, 37%, 10%, 35%;
+}
+
+.about_container > h1{
+    width: 700px;
+    margin-left: 39%;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 39px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: #000000;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.about_container > h1::after{
+    width: 50px;
+    height: 6px;
+    background-color: #f5112c;
+    position: relative;
+    top: 20px;
+    content: '';
+    display: block;
+}
+
+.about_container > strong{
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 2.3px;
+    text-align: left;
+    color: #f5112c;
+    margin-left: 39%;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.about_container > p{
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.56;
+    letter-spacing: 0.9px;
+    text-align: left;
+    width: 560px;
+    margin-left: 39%;
+    color: #141414;
+}
+
+.about_wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+    max-width: 600px;
+    padding-top: 20px;
+    margin-left: 38.2%;
+    align-content: flex-start;
+}
+
+.about_card{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    width: 288px;
+}
+
+.about_card > h1{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.56;
+  letter-spacing: 0.9px;
+  text-align: left;
+  color: #141414;
+  margin-left: 0;
+}
+
+.about_card > p{
+	font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.56;
+  letter-spacing: 0.9px;
+  text-align: left;
+  margin-top: 5px;
+  color: #141414;
+}
+
+
+
+
+@media (max-width: 768px){
+.authors_container {
+    background: url(../images/8.png) 1% 19.5% no-repeat, 
+	url(../images/4.png) left 20% no-repeat, 
+	  url(../images/volnuha.png) 80% 70% no-repeat,
+	url(../images/bublic.png) 130% 80% no-repeat;
+    background-size: auto, 70%, auto, 45%;
+	}
+	.authors_container > h1 {
+    width: 80%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+	}
+	
+
+	.about_container > h1 {
+width: 80%;
+    font-size: 1.8em;
+    margin-left: 24%;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.about_container > strong {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
+    letter-spacing: 2.3px;
+    text-align: left;
+    color: #f5112c;
+    margin-left: 24%;
+    width: 300px;
+    margin-top: 30px;
+}
+.about_container > p {
+font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.56;
+    letter-spacing: 0.9px;
+    text-align: left;
+    width: 560px;
+    margin-left: 24%;
+    color: #141414;
+}
+.about_wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 500px;
+    max-width: 600px;
+    padding-top: 20px;
+    margin-left: 24%;
+    align-content: flex-start;
+}
+.about_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 786px;
+    background: url(../images/volna.png) 6% 70% no-repeat, url(../images/bigben.png) -160% 100% no-repeat, url(../images/2.png) -10% 28% no-repeat, url(../images/bublic_big.png) -20% 74% no-repeat;
+    background-size: 13%, 70%, 10%, 35%;
+}
+}
+
+@media (max-width: 768px) {
+		.authors_card:last-child {
+		margin-left: 10%;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 425px) {
+.authors_container > h1 {
+    margin-left: 35%;
+}
+.authors_wrap{
+	    margin-left: 30%;
+    flex-direction: column;
+}
+
+.about_container{
+	    padding-top: 146%;
+}
+
+.about_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 786px;
+    background: 
+	url(../images/volna.png) 94% 20% no-repeat, 
+	url(../images/bigben.png) 100% top no-repeat, 
+	url(../images/2.png) 20% 12% no-repeat, 
+	url(../images/bublic_big.png) 100% 14% no-repeat;
+    background-size: 18%, 100%, 20%, 70%;
+}
+
+.about_card > h1{
+	margin-left:auto;
+}
+
+.about_card > p{
+	text-align: center;
+}
+
+.about_container > p {
+	font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 14px;
+    width: 65%;
+    font-weight: 300;
+    line-height: 1.56;
+    letter-spacing: 0.9px;
+    text-align: center;
+    margin-left: 36%;
+    color: #141414;
+}
+.about_container > h1 {
+    width: 80%;
+    font-size: 1.8em;
+    margin-left: 35%;
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.about_container > strong{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.about_container > h1::after {
+    width: 50px;
+    height: 6px;
+    background-color: #f5112c;
+    position: relative;
+    top: 20px;
+    left: 20%;
+    content: '';
+    display: block;
+}
+
+.authors_container {
+    background: url(../images/8.png) 1% 19.5% no-repeat, 
+ url(../images/4.png) left 20% no-repeat;
+    background-size: auto, 70%;
+}
+.authors_card:last-child {
+		margin-left: 0;
+		margin-right: auto;
+	}
+}
